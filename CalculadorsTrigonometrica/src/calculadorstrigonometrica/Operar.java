@@ -5,6 +5,9 @@
  */
 package calculadorstrigonometrica;
 
+import static java.lang.Math.cos;
+import static java.lang.Math.sin;
+
 /**
  *
  * @author estudiantes
@@ -12,6 +15,8 @@ package calculadorstrigonometrica;
 public class Operar {
       double n1;
     double n2;
+    double n3;
+  
     
     public double Sumar(){
         
@@ -35,5 +40,16 @@ public class Operar {
         
         return(n1-n2);
         
+    }
+    
+    public double Seno(){
+   
+    return(sin(n3* Math.PI/180.0));
+    }
+    
+    
+    public double Coseno(){
+   
+    return(cos(n3* Math.PI/180.0));
     }
 }
