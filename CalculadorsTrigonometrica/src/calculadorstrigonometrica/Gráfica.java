@@ -104,8 +104,18 @@ public class Gráfica extends javax.swing.JFrame {
         });
 
         jButton3.setText("Tan");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
         jButton4.setText("Cot");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -113,6 +123,11 @@ public class Gráfica extends javax.swing.JFrame {
         });
 
         jButton5.setText("Sec");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -259,6 +274,24 @@ this.igual.setText(String.valueOf(Numero.Seno()));    // TODO add your handling 
      
 this.igual.setText(String.valueOf(Numero.Coseno()));   // TODO add your handling code here:
     }//GEN-LAST:event_CosenoBMouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+       Numero.n3=Float.parseFloat(numero3.getText());
+     
+this.igual.setText(String.valueOf(Numero.Tangente()));   // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+       Numero.n3=Float.parseFloat(numero3.getText());
+     
+this.igual.setText(String.valueOf(Numero.Cotangente()));   // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+Numero.n3=Float.parseFloat(numero3.getText());
+     
+this.igual.setText(String.valueOf(Numero.Secante()));          // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5MouseClicked
 
     /**
      * @param args the command line arguments

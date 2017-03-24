@@ -7,6 +7,7 @@ package calculadorstrigonometrica;
 
 import static java.lang.Math.cos;
 import static java.lang.Math.sin;
+import static java.lang.Math.tan;
 
 /**
  *
@@ -52,4 +53,24 @@ public class Operar {
    
     return(cos(n3* Math.PI/180.0));
     }
+    
+    
+     public double Tangente(){
+   
+    return(tan(n3* Math.PI/180.0));
+    }
+     
+     public double Cotangente(){
+   
+    return(1/tan(n3* Math.PI/180.0));
+    }
+     
+   
+     
+     public double Secante(){
+   
+    return(1/cos(n3* Math.PI/180.0));
+    }
+
+   
 }
