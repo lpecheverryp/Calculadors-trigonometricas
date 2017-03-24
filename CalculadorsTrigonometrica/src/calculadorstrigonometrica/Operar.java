@@ -71,6 +71,13 @@ public class Operar {
    
     return(1/cos(n3* Math.PI/180.0));
     }
+     
+     public double Cosecante(){
+   
+    return(1/sin(n3* Math.PI/180.0));
+    }
 
+     
+    
    
 }
